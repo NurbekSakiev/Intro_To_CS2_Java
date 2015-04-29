@@ -6,12 +6,11 @@ class Main
   {
 	try
 	{
-	    Scanner fileReader;
 		// Name of the input file is records.txt.
-        // This file should be in the same direct with Main.java file.
+        // This file should be in the same directory with Main.java file.
 		String fileName = "records.txt";
 		File  inputFile = new File(fileName);
-		fileReader      = new Scanner( inputFile ) ;
+		Scanner fileReader  = new Scanner( inputFile ) ;
 		while( fileReader.hasNext() )
 		{
 			System.out.println( fileReader.nextLine() );
